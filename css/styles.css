@@ -35,3 +35,35 @@ body {
   border-radius: 5px;
 }
 
+/* Reviews Section */
+.reviews {
+  text-align: center;
+  padding: 2em;
+  background-color: #f9f9f9;
+}
+
+.slideshow-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 0.5em;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
