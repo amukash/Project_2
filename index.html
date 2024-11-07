@@ -10,9 +10,9 @@
 
   <!-- Header Section -->
   <header class="header">
-    <h1>Plenty of Fish</h1>
     <nav class="navbar">
       <button class="hamburger">&#9776;</button>
+      <h1>Plenty of Fish</h1>
       <a href="registration.html" class="signup-btn">Sign Up</a>
     </nav>
   </header>
@@ -21,32 +21,26 @@
   <section class="reviews">
     <h2>User Testimonials</h2>
     <div class="slideshow-container">
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
       <div class="slide">
         <img src="images/user1.jpg" alt="User 1">
         <p>"Amazing experience!"</p>
         <span>★★★★★</span>
       </div>
-      <div class="slide">
-        <img src="images/user2.jpg" alt="User 2">
-        <p>"Found my soulmate!"</p>
-        <span>★★★★★</span>
-      </div>
-      <div class="slide">
-        <img src="images/user3.jpg" alt="User 3">
-        <p>"Highly recommend!"</p>
-        <span>★★★★★</span>
-      </div>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
       <!-- Add more slides as needed -->
     </div>
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
   </section>
 
   <!-- Footer Section -->
   <footer class="footer">
     <div class="download-links">
-      <a href="#">Download on Google Play</a>
-      <a href="#">Download on the App Store</a>
+      <a href="#">
+        <img src="images/google-play-badge.webp" alt="Download on Google Play">
+      </a>
+      <a href="#">
+        <img src="images/apple-app-store-badge.png" alt="Download on the App Store">
+      </a>
     </div>
     <div class="social-links">
       <a href="https://www.instagram.com" target="_blank">
