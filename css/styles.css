@@ -1,125 +1,152 @@
-/* General Styling */
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #FFDAB9; /* Peachy salmon color */
+  font-family: 'Roboto', sans-serif;
+  background-color: #FAD4C0; /* Peachy salmon background */
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
-/* Header */
+h1, h2 {
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Header Styles */
 .header {
-  background-color: #FF4500; /* Sunset orange */
-  color: white;
+  background-color: #F8B88B; /* Pale orange */
+  padding: 10px 20px;
   display: flex;
   align-items: center;
-  padding: 1em;
-  position: relative;
+  justify-content: space-between;
 }
 
-.header h1 {
-  flex: 1;
-  text-align: center;
-  font-size: 1.8em;
-  margin: 0;
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-.navbar .hamburger {
-  font-size: 1.5em;
+.hamburger {
+  font-size: 24px;
   background: none;
   border: none;
-  color: white;
   cursor: pointer;
+  color: #ffffff;
+}
+
+.site-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px;
 }
 
 .signup-btn {
-  background-color: #ffffff; /* White button */
-  padding: 0.5em 1em;
-  color: #FF4500; /* Sunset orange text */
+  color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: #F67C4A; /* Slightly darker orange for the button */
   border-radius: 5px;
 }
 
 /* Reviews Section */
 .reviews {
+  padding: 20px;
   text-align: center;
-  padding: 2em;
-  background-color: #f9f9f9;
 }
 
 .slideshow-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .slide {
-  display: flex;
+  display: none;
+  flex-direction: column;
   align-items: center;
-  gap: 1em;
-  text-align: left;
-}
-
-.slide img {
-  max-width: 100px;
-  border-radius: 50%;
-}
-
-.prev, .next {
-  cursor: pointer;
-  background-color: #FF4500;
-  color: white;
-  padding: 0.5em;
-  border: none;
-  font-size: 1.5em;
-  margin: 0 1em;
-}
-
-/* Footer */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 2em;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
 }
 
-.download-links {
+.slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.slide p, .slide span {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.active-slide {
   display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-bottom: 1em;
+}
+
+/* Slideshow Arrows */
+.prev, .next {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #F8B88B; /* Pale orange to match header */
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #F8B88B; /* Pale orange */
+  padding: 20px;
+  text-align: center;
 }
 
 .download-links img {
-  width: 150px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  margin-top: 1em;
+  width: 120px;
+  margin: 10px;
 }
 
 .social-links img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.2s;
-}
-
-.social-links img:hover {
-  transform: scale(1.1);
+  width: 30px;
+  margin: 0 10px;
+  cursor: pointer;
 }
 
 .footer-menu {
-  margin-top: 2em;
+  margin-top: 20px;
 }
 
 .footer-menu details {
-  color: white;
-  margin-bottom: 0.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
 
-.footer-menu a {
-  color: white;
-  display: block;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 20px;
+  }
+  .signup-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .prev, .next {
+    font-size: 20px;
+  }
 }
