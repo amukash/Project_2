@@ -1,21 +1,25 @@
 /* General Styling */
 body {
   font-family: Arial, sans-serif;
+  background-color: #FFDAB9; /* Peachy salmon color */
   margin: 0;
   padding: 0;
 }
 
 /* Header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
+  background-color: #FF4500; /* Sunset orange */
   color: white;
+  display: flex;
+  align-items: center;
   padding: 1em;
+  position: relative;
 }
 
 .header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.8em;
   margin: 0;
 }
 
@@ -28,9 +32,9 @@ body {
 }
 
 .signup-btn {
-  background-color: #ff6347;
+  background-color: #ffffff; /* White button */
   padding: 0.5em 1em;
-  color: white;
+  color: #FF4500; /* Sunset orange text */
   text-decoration: none;
   border-radius: 5px;
 }
@@ -44,12 +48,15 @@ body {
 
 .slideshow-container {
   display: flex;
-  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide {
-  min-width: 100%;
-  transition: transform 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-align: left;
 }
 
 .slide img {
@@ -59,16 +66,33 @@ body {
 
 .prev, .next {
   cursor: pointer;
-  background-color: #333;
+  background-color: #FF4500;
   color: white;
   padding: 0.5em;
   border: none;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  font-size: 1.5em;
+  margin: 0 1em;
 }
 
-/* Social Links Styling */
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+.download-links {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.download-links img {
+  width: 150px;
+}
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -86,26 +110,13 @@ body {
   transform: scale(1.1);
 }
 
-/* Footer */
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 2em;
-}
-
-.footer .download-links,
-.footer .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-}
-
 .footer-menu {
-  text-align: center;
+  margin-top: 2em;
 }
 
 .footer-menu details {
   color: white;
+  margin-bottom: 0.5em;
 }
 
 .footer-menu a {
