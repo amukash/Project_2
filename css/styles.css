@@ -67,3 +67,30 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2em;
+}
+
+.footer .download-links,
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.footer-menu {
+  text-align: center;
+}
+
+.footer-menu details {
+  color: white;
+}
+
+.footer-menu a {
+  color: white;
+  display: block;
+}
