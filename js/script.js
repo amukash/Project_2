@@ -1,18 +1,15 @@
-let currentSlide = 0;
-
-function showSlide(n) {
-  const slides = document.getElementsByClassName("slide");
-  if (n >= slides.length) currentSlide = 0;
-  else if (n < 0) currentSlide = slides.length - 1;
-  else currentSlide = n;
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(-${currentSlide * 100}%)`;
-  }
-}
+let slideIndex = 0;
+showSlide(slideIndex);
 
 function moveSlide(n) {
-  showSlide(currentSlide + n);
+  showSlide(slideIndex += n);
 }
 
-document.addEventListener("DOMContentLoaded", () => showSlide(currentSlide));
+function showSlide(n) {
+  const slides = document.querySelectorAll('.slide');
+  if (n >= slides.length) slideIndex = 0;
+  if (n < 0) slideIndex = slides.length - 1;
+  
+  slides.forEach(slide => slide.style.display = 'none');
+  slides[slideIndex].style.display = 'flex';
+}
