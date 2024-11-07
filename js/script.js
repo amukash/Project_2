@@ -13,3 +13,18 @@ function showSlide(n) {
   slides.forEach(slide => slide.style.display = 'none');
   slides[slideIndex].style.display = 'flex';
 }
+
+function toggleDropdown() {
+  const dropdownMenu = document.getElementById("dropdownMenu");
+  dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+}
+
+// Optional: Hide the dropdown when clicking outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.hamburger')) {
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    if (dropdownMenu.style.display === "block") {
+      dropdownMenu.style.display = "none";
+    }
+  }
+};
