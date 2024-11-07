@@ -1,166 +1,70 @@
-/* General Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FAD4C0; /* Peachy salmon background */
-  margin: 0;
-  padding: 0;
-  color: #333;
-}
-
-h1, h2 {
-  color: #ffffff;
-}
-
-h1 {
-  text-align: center;
-  font-weight: 700;
-}
-
-h2 {
-  font-weight: 700;
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* Header Styles */
+/* General styling for header */
 .header {
-  background-color: #F8B88B; /* Pale orange */
-  padding: 10px 20px;
+  background-color: #ffddc1; /* Pale orange */
+  padding: 40px 20px; /* Increased padding for larger banner */
+  text-align: center;
+  position: relative; /* So we can position the fish image */
+}
+
+/* Navbar styling */
+.navbar .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  width: 100%;
+/* Centering title */
+.navbar h1 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  color: #ffffff; /* White text for contrast */
+  font-family: 'Roboto', sans-serif;
 }
 
+/* Hamburger menu styling */
 .hamburger {
   font-size: 24px;
   background: none;
   border: none;
+  color: #333;
   cursor: pointer;
-  color: #ffffff;
+  margin-right: auto; /* Align to the far left */
 }
 
-.site-title {
-  flex-grow: 1;
-  text-align: center;
-  font-size: 24px;
-}
-
+/* Sign-up button styling */
 .signup-btn {
   color: #ffffff;
+  background-color: #ff6f61; /* Button color */
+  padding: 10px 15px;
   text-decoration: none;
-  font-weight: bold;
-  padding: 8px 16px;
-  background-color: #F67C4A; /* Slightly darker orange for the button */
   border-radius: 5px;
+  font-weight: bold;
+  margin-left: auto; /* Align to the far right */
 }
 
-/* Reviews Section */
-.reviews {
-  padding: 20px;
-  text-align: center;
+/* Fish image */
+.fish-image {
+  position: absolute;
+  top: 20px;  /* Adjust the top position to suit the design */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px; /* Make the image larger */
+  height: auto; /* Maintain aspect ratio */
+  z-index: -1; /* Place the image behind other content */
 }
 
-.slideshow-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.slide {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-}
-
-.slide img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.slide p, .slide span {
-  margin: 10px 0;
-  font-size: 1rem;
-  color: #333;
-}
-
-.active-slide {
-  display: flex;
-}
-
-/* Slideshow Arrows */
-.prev, .next {
-  cursor: pointer;
-  font-size: 24px;
-  padding: 10px;
-  color: #ffffff;
-  background-color: #F8B88B; /* Pale orange to match header */
-  border: none;
-  border-radius: 50%;
-  margin: 0 5px;
-}
-
-/* Footer Section */
-.footer {
-  background-color: #F8B88B; /* Pale orange */
-  padding: 20px;
-  text-align: center;
-}
-
-.download-links img {
-  width: 120px;
-  margin: 10px;
-}
-
-.social-links img {
-  width: 30px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-
-.footer-menu {
-  margin-top: 20px;
-}
-
-.footer-menu details {
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar h1 {
-    font-size: 20px;
-  }
-  .signup-btn {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
-  .prev, .next {
-    font-size: 20px;
-  }
-}
-
-/* Styles for the dropdown menu */
+/* Dropdown menu */
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 60px; /* Adjust based on header height */
+  top: 60px;
   left: 10px;
-  background-color: #ffebcd; /* Peachy background */
+  background-color: #ffebcd;
   border: 1px solid #ddd;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
 }
 
 .dropdown-menu a {
@@ -171,5 +75,5 @@ h2 {
 }
 
 .dropdown-menu a:hover {
-  background-color: #f5a476; /* Light peachy hover effect */
+  background-color: #f5a476;
 }
