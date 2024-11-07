@@ -5,23 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plenty of Fish - Reviews</title>
   <link rel="stylesheet" href="css/styles.css">
-  <!-- Link to Google Font (e.g., 'Roboto') -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-    }
-  </style>
 </head>
 <body>
 
   <!-- Header Section -->
   <header class="header">
     <nav class="navbar">
-      <button class="hamburger">&#9776;</button>
-      <h1 class="site-title">Plenty of Fish</h1>
+      <!-- Hamburger Menu -->
+      <button class="hamburger" onclick="toggleDropdown()">&#9776;</button>
+      <h1>Plenty of Fish</h1>
       <a href="registration.html" class="signup-btn">Sign Up</a>
     </nav>
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu" id="dropdownMenu">
+      <a href="registration.html">Register</a>
+      <a href="about.html">About</a>
+    </div>
   </header>
 
   <!-- Reviews Section -->
@@ -29,33 +29,39 @@
     <h2>User Testimonials</h2>
     <div class="slideshow-container">
       <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-      
-      <!-- Slide 1 -->
-      <div class="slide">
+      <div class="slide active-slide">
         <img src="images/user1.webp" alt="User 1">
         <p>"Amazing experience!"</p>
         <span>★★★★★</span>
       </div>
-      
       <!-- Slide 2 -->
       <div class="slide">
         <img src="images/user2.webp" alt="User 2">
         <p>"Found my soulmate! Couldn't be happier."</p>
         <span>★★★★★</span>
       </div>
-      
       <!-- Slide 3 -->
       <div class="slide">
         <img src="images/user3.webp" alt="User 3">
         <p>"Great platform for connecting with others."</p>
         <span>★★★★★</span>
       </div>
-      
+      <!-- Additional Slides -->
+      <div class="slide">
+        <img src="images/user4.webp" alt="User 4">
+        <p>"Life-changing experience!"</p>
+        <span>★★★★★</span>
+      </div>
+      <div class="slide">
+        <img src="images/user5.webp" alt="User 5">
+        <p>"Highly recommended for anyone looking to meet new people."</p>
+        <span>★★★★★</span>
+      </div>
       <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
   </section>
 
- <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer class="footer">
     <div class="download-links">
       <a href="https://play.google.com/store/apps/details?id=com.pof.android&hl=en_US&pli=1" target="_blank">
@@ -66,13 +72,13 @@
       </a>
     </div>
     <div class="social-links">
-      <a href="https://www.instagram.com/plentyoffish/?hl=en" target="_blank">
+      <a href="https://www.instagram.com" target="_blank">
         <img src="images/Instagram_icon.png.webp" alt="Instagram Icon">
       </a>
-      <a href="https://www.facebook.com/PlentyofFishDating/" target="_blank">
+      <a href="https://www.facebook.com" target="_blank">
         <img src="images/facebook-logo-2019.svg" alt="Facebook Icon">
       </a>
-      <a href="https://x.com/PlentyOfFish?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+      <a href="https://www.twitter.com" target="_blank">
         <img src="images/twitter-3-logo-png-transparent.png" alt="Twitter Icon">
       </a>
     </div>
