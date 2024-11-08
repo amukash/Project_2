@@ -6,9 +6,9 @@ body {
   padding: 0;
 }
 
-/* Header section */
+/* Header section with gradient */
 .header {
-  background-color: linear-gradient(to right, #b0470b, #ad233e; /* Orange color to pink to be like a sunset over the ocean */
+  background: linear-gradient(to right, #b0470b, #ad233e); /* Orange to pink gradient */
   padding: 15px;
   position: relative;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar h1 {
-  color: black;
+  color: white;
   text-align: center;
   flex: 1;
 }
@@ -30,13 +30,13 @@ body {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  color: black;
+  color: white;
   margin-right: 20px;
 }
 
 .signup-btn {
   color: white;
-  background-color: black; /* Darker button color for contrast */
+  background-color: #FF5733; /* Darker button color for contrast */
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -45,7 +45,7 @@ body {
 }
 
 .signup-btn:hover {
-  background-color: white;
+  background-color: #FF3B1F;
 }
 
 /* Dropdown Menu */
@@ -55,7 +55,7 @@ body {
   top: 55px;
   left: 0;
   width: 150px;
-  background-color: black;
+  background-color: #FFD8A8;
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -68,14 +68,22 @@ body {
 }
 
 .dropdown-menu a:hover {
-  background-color: #b0470b;
+  background-color: #FFB07C;
 }
 
-/* Middle Section with blue background */
+/* Top Banner with gradient */
+.top-banner {
+  background: linear-gradient(to right, #b0470b, #ad233e); /* Orange-pink gradient */
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Middle Section with lighter blue background */
 .middle-section {
-  background-color: #1448e3; /* Bright blue color */
-  padding: 60px 0; /* Increase padding to make it bigger */
-  color: white; /* Text color for contrast */
+  background-color: #4a9df9; /* Light blue color */
+  padding: 60px 0;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,6 +93,12 @@ body {
 .reviews {
   text-align: center;
   margin: 20px;
+}
+
+.reviews .testimonial {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
 /* Slideshow styling */
@@ -126,14 +140,7 @@ body {
 
 /* Footer section */
 .footer {
-  background-color: #FFD8A8;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Bottom Banner */
-.bottom-banner {
-  background-color: #070585; /* Dark blue color */
+  background-color: #1448e3; /* Dark blue color for the footer */
   padding: 20px;
   text-align: center;
   color: white;
