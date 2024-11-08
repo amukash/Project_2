@@ -81,7 +81,7 @@ body {
 
 /* Center User Testimonials Content */
 .reviews {
-  text-align: left;
+  text-align: center;
   margin: 20px auto;
   max-width: 80%; /* Adjust width if needed */
 }
@@ -109,7 +109,7 @@ body {
 
 /* Slideshow styling */
 .slideshow-container {
-  position: center;
+  position: absolute;
   max-width: 80%; /* Adjust width as desired */
   margin: auto;
   text-align: center; /* Center the slideshow */
