@@ -157,7 +157,7 @@ body {
 
 /* Footer section */
 .footer {
-  background-color: #1448e3; /* Dark blue color for the footer */
+   background: linear-gradient(to right, #b0470b, #ad233e); /* Orange to pink gradient */
   padding: 20px;
   text-align: center;
   color: white;
