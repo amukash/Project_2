@@ -71,15 +71,34 @@ body {
   background-color: #FFB07C;
 }
 
-/* Reviews section */
+/* Top Banner with gradient */
+.top-banner {
+  background: linear-gradient(to right, #b0470b, #ad233e); /* Orange-pink gradient */
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Middle Section with blue background */
+.middle-section {
+  background-color: #1448e3; /* Bright blue color */
+  padding: 60px 0; /* Increase padding to make it bigger */
+  color: white; /* Text color for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .reviews {
   text-align: center;
   margin: 20px;
 }
 
+/* Slideshow styling */
 .slideshow-container {
   position: relative;
-  max-width: 600px;
+  max-width: 80%; /* Adjust width as desired */
   margin: auto;
 }
 
@@ -118,6 +137,14 @@ body {
   background-color: #FFD8A8;
   padding: 20px;
   text-align: center;
+}
+
+/* Bottom Banner */
+.bottom-banner {
+  background-color: #070585; /* Dark blue color */
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
 .download-links img {
