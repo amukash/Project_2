@@ -13,6 +13,53 @@ body {
   position: relative;
 }
 
+/* Reset body margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the navigation container */
+nav {
+  background-color: #643838; /* Dark background for the navigation bar */
+  padding: 10px 0; /* Space above and below the nav items */
+  position: fixed; /* Keep the nav fixed at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  justify-content: center; /* Center align the nav items */
+  align-items: center; /* Vertically center the items */
+}
+
+/* Style the list items in the nav */
+nav ul {
+  list-style: none;
+  display: flex; /* Align the items horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style individual list items */
+nav ul li {
+  margin: 0 15px; /* Add space between the items */
+}
+
+/* Style links inside the list items */
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255); /* White text color */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Hover effect for the links */
+nav ul li a:hover {
+  color: #007BFF; /* Highlight link on hover */
+}
+
 .navbar .container {
   display: flex;
   align-items: center;
