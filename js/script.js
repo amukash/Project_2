@@ -35,3 +35,25 @@ window.onclick = function(event) {
     }
   }
 };
+
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form from refreshing the page
+
+  const username = document.getElementById('username').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const password = document.getElementById('password').value;
+  const confirmPassword = document.getElementById('confirmPassword').value;
+
+  // Validate fields
+  if (password !== confirmPassword) {
+    alert("Passwords do not match. Please try again.");
+    return;
+  }
+
+  if (username && email && password) {
+    alert(`Welcome, ${username}! Your account has been created.`);
+    // Logic to handle form submission could go here
+  } else {
+    alert("Please fill out all fields.");
+  }
+});
