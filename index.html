@@ -6,34 +6,23 @@
   <title>Plenty of Fish - Reviews</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <nav>
-    <ul>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Menu</a>
-        <div class="dropdown-menu" id="dropdownMenu">
-          <a href="registration.html">Register</a>
-          <a id="onpage" href="index.html">About</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
 </head>
 <body>
 
   <!-- Header Section -->
   <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <!-- Hamburger Menu -->
-        <button class="hamburger" onclick="toggleDropdown()">&#9776;</button>
-        
-        <!-- Centered Title -->
-        <h1>Plenty of Fish</h1>
-        
-        <!-- Right-aligned Sign-up Button -->
-        <a href="registration.html" class="signup-btn">Sign Up</a>
-      </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="registration.html">Sign-up</a></li>
+        <li><a href="about.html">About/Reviews</a></li>
+      </ul>
     </nav>
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu" id="dropdownMenu">
+      <a href="registration.html">Register</a>
+      <a href="about.html">About</a>
+    </div>
   </header>
 
   <!-- Reviews Section -->
