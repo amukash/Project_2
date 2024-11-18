@@ -319,5 +319,6 @@ body {
 }
 
 .btn-submit:hover {
-  background-color: #936468;
+  background-color: #e6c1b4;
+  color: #b0470b;
 }
